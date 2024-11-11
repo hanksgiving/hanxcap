@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import AvatarIcon from './icons/avatar.vue'
 
 defineProps({
   msg: String,

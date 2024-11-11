@@ -1,19 +1,7 @@
 <template>
   <div class="min-h-screen bg-black text-white font-sans">
     <!-- Navigation -->
-    <nav class="container mx-auto px-6 py-6 flex justify-between items-center relative z-10">
-      <router-link to="/" class="text-2xl font-bold">HAN<a class="text-hanx-purple">X</a></router-link>
-      <div class="hidden md:flex space-x-8">
-        <router-link to="/portfolio" class="hover:text-gray-300 transition-colors duration-300">Portfolio</router-link>
-        <a href="#" class="hover:text-gray-300 transition-colors duration-300">About</a>
-        <a href="#" class="hover:text-gray-300 transition-colors duration-300">Team</a>
-        <a href="#" class="hover:text-gray-300 transition-colors duration-300">Contact</a>
-      </div>
-      <button class="md:hidden">
-        <MenuIcon class="h-6 w-6" />
-      </button>
-    </nav>
-
+    <Navigation/>
     <!-- Portfolio Header -->
     <header class="py-20 w-full">
       <div class="container mx-auto px-6">
@@ -26,7 +14,7 @@
           <div class="absolute inset-0 flex flex-col justify-center items-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Portfolio Companies</h1>
             <p class="text-xl text-gray-300 max-w-3xl mx-auto text-center px-4">
-              Discover the innovative ventures & start-ups that HANX Capital is proud to support and partner with.
+              Discover the market paradigm changing solutions we're helping to scale.
             </p>
           </div>
         </div>
@@ -57,9 +45,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 py-12 text-white">
-      <!-- Footer content (similar to Home.vue) -->
-    </footer>
+    <Footer />
   </div>
 </template>
 
@@ -67,18 +53,21 @@
 import { ref } from 'vue'
 import { MenuIcon } from 'lucide-vue-next'
 import PortfolioCompany from '../components/PortfolioCompany.vue'
+import Footer from '../components/Footer.vue'
 
 // Import the logos as Vue components
 import BiometasLogo from '../assets/Biometas_logo.png'
 import XTransferLogo from '../assets/XTransfer_logo.png'
 import BiobytezLogo from '../assets/bb_logo_white.svg?component'
+import VivaLogo from '../assets/viva_logo_white.png'
+import Navigation from '../components/Navigation.vue'
 
 const portfolioCompanies = ref([
   {
     id: 1,
     image: 'https://companieslogo.com/img/orig/PLTR_BIG.D-38de5db6.png?t=1720244493',
     website: 'https://palantir.com',
-    imageClass: 'max-w-[70%] max-h-[70%]'
+    imageClass: 'max-w-[70%] max-h-[15%]'
   },
   {
     id: 2,
@@ -90,7 +79,7 @@ const portfolioCompanies = ref([
     id: 3,
     image: BiobytezLogo,
     website: 'https://biobytez.com',
-    imageClass: 'w-50 h-[20%]'
+    imageClass: 'max-w-[70%] h-[20%]'
   },
   {
     id: 4,
@@ -106,9 +95,9 @@ const portfolioCompanies = ref([
   },
   {
     id: 6,
-    image: 'https://assets.getpostman.com/common-share/postman-logo-horizontal-white.svg',
-    website: 'https://postman.com',
-    imageClass: 'max-w-[80%] max-h-[80%]'
+    image: VivaLogo,
+    website: 'https://www.vivabiotech.com/',
+    imageClass: 'max-w-[50%] max-h-[50%]'
   }
 ])
 </script>
