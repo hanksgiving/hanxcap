@@ -44,6 +44,58 @@
             </div>
         </div>
     </div>
+    <!--Team section-->
+    <div class="container mx-auto px-6 py-20">
+      <div class="w-full items-center justify-self-center">
+        <a class="text-white text-4xl font-semibold text-center">A world-class team from</a>
+      </div>
+      <div class="grid grid-cols-4 grid-rows-2 gap-8 pt-6 pb-6">
+        <!-- Logo placeholders - replace with actual logo components -->
+        <div class="border border-gray-800 aspect-video flex items-center justify-center">
+          <span class="text-gray-600">
+            <img :src="JPMLogo" alt="JPMorgan Chase" class="max-w-[100%] max-h-[100%]">
+          </span>
+        </div>
+        <div class="border border-gray-800 aspect-video flex items-center justify-center">
+          <span class="text-gray-600">
+            <img :src="MetaLogo" alt="Meta" 
+          </span>
+        </div>
+        <div class="border border-gray-800 aspect-video flex items-center justify-center">
+          <span class="text-gray-600">
+            <img :src="ByteDanceLogo" alt="ByteDance"
+          </span>
+        </div>
+        <div class="border border-gray-800 aspect-video flex items-center justify-center">
+          <span class="text-gray-600">
+            <img :src="CloudflareLogo" alt="Cloudflare"
+          </span>
+        </div>
+        <div class="border border-gray-800 aspect-video flex items-center justify-center">
+          <span class="text-gray-600">
+            <img :src="AppleLogo" alt="Apple"
+          </span>
+        </div>
+        <div class="border border-gray-800 aspect-video flex items-center justify-center">
+          <span class="text-gray-600">
+            <img :src="GoogleLogo" alt="Google"
+          </span>
+        </div>
+        <div class="border border-gray-800 aspect-video flex items-center justify-center">
+          <span class="text-gray-600">
+            <img :src="Cap1Logo" alt="Capital One"
+          </span>
+        </div>
+        <div class="border border-gray-800 aspect-video flex items-center justify-center">
+          <span class="text-gray-600">
+            <img :src="LVMHLogo" alt="LVMH"
+          </span>
+        </div>
+      </div>
+    <div class="justify-end flex">
+      <a class="text-white text-4xl font-semibold">to help you deliver world-class results. </a>
+    </div>
+    </div>
     <!--join us-->
     <div class="grid grid-cols-3 container mx-auto px-6">
         <div class="border border-gray-800 col-span-3 px-10 py-40 grid">
@@ -64,4 +116,12 @@ import Star from '../components/icons/Star.vue';
 import Team from '../components/icons/Team.vue';
 import Product from '../components/icons/Product.vue';
 import List from '../components/icons/List.vue';
+import JPMLogo from '../assets/JPM_logo.png'
+import MetaLogo from '../assets/Meta_logo.png'
+import AppleLogo from '../assets/Apple_logo.png'
+import ByteDanceLogo from '../assets/ByteDance_logo.png'
+import CloudflareLogo from '../assets/Cloudflare_Logo.png'
+import GoogleLogo from '../assets/Google_logo.png'
+import Cap1Logo from '../assets/Cap1_logo.png'
+import LVMHLogo from '../assets/LVMH_logo.png'
 </script>

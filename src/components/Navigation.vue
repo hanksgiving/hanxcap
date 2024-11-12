@@ -5,7 +5,6 @@
       <div class="hidden md:flex space-x-8">
         <router-link to="/portfolio" class="hover:text-gray-300 transition-colors duration-300">Portfolio</router-link>
         <router-link to="/about" class="hover:text-gray-300 transition-colors duration-300">About</router-link>
-        <a href="#" class="hover:text-gray-300 transition-colors duration-300">Team</a>
         <a href="#" class="hover:text-gray-300 transition-colors duration-300">Contact</a>
       </div>
       <button class="md:hidden">

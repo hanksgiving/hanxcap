@@ -29,9 +29,14 @@
             <div class="aspect-square w-full h-full">
               <PortfolioCompany
                 :image="company.image"
+                :colorImage="company.colorImage"
                 :website="company.website"
                 :imageClass="company.imageClass"
-                class="bg-black h-full"
+                :colorImageClass="company.colorImageClass"
+                :isHovered="company.isHovered"
+                class=" h-full"
+                @mouseenter="company.isHovered = true"
+                @mouseleave="company.isHovered = false"
               />
             </div>
             <div class="absolute inset-0 border-r border-b border-gray-700 pointer-events-none"></div>
@@ -58,46 +63,70 @@ import Footer from '../components/Footer.vue'
 // Import the logos as Vue components
 import BiometasLogo from '../assets/Biometas_logo.png'
 import XTransferLogo from '../assets/XTransfer_logo.png'
-import BiobytezLogo from '../assets/bb_logo_white.svg?component'
+import BiobytezLogoWhite from '../assets/BioBytez_white.png'
+import BiobytezLogo from '../assets/BioBytez_color.png'
 import VivaLogo from '../assets/viva_logo_white.png'
 import Navigation from '../components/Navigation.vue'
+import VivaColorLogo from '../assets/viva_color_logo.png'
+import MongoDBLogo from '../assets/MongoDB_Logo.png'
+import MongoDBLogoWhite from '../assets/MongoDB_Logo_white.png'
+import BiomeasLogoColor from '../assets/Biometas_scientist_logo.png'
+import XTransferLogoColor from '../assets/XTransfer_logo_color.png'
 
 const portfolioCompanies = ref([
   {
     id: 1,
     image: 'https://companieslogo.com/img/orig/PLTR_BIG.D-38de5db6.png?t=1720244493',
+    colorImage: 'https://companieslogo.com/img/orig/PLTR_BIG.D-38de5db6.png?t=1720244493', 
     website: 'https://palantir.com',
-    imageClass: 'max-w-[70%] max-h-[15%]'
+    imageClass: 'max-w-[70%] max-h-[70%]',
+    colorImageClass: 'max-w-[70%] max-h-[70%]',
+    isHovered: false
   },
   {
     id: 2,
-    image: 'https://cdn.prod.website-files.com/64e8d184394b2f0dc970cd1a/659eb9df84e5ef37ae9d5f7d_MongoDB_White.png',
+    image: MongoDBLogoWhite, 
+    colorImage: MongoDBLogo,
     website: 'https://mongodb.com',
-    imageClass: 'max-w-[70%] max-h-[70%]'
+    imageClass: 'w-[80%] h-[50%]',
+    colorImageClass: 'max-w-[80%] max-h-[50%]',
+    isHovered: false
   },
   {
     id: 3,
-    image: BiobytezLogo,
+    image: BiobytezLogoWhite,
+    colorImage: BiobytezLogo,
     website: 'https://biobytez.com',
-    imageClass: 'max-w-[70%] h-[20%]'
+    imageClass: 'max-w-[70%] h-[20%]',
+    colorImageClass: 'max-w-[70%] max-h-[70%]',
+    isHovered: false
   },
   {
     id: 4,
     image: XTransferLogo,
+    colorImage: XTransferLogoColor,
     website: 'https://xtransfer.com',
-    imageClass: 'max-w-[70%] max-h-[70%]'
+    imageClass: 'max-w-[100%] max-h-[100%]',
+    colorImageClass: 'max-w-[100%] max-h-[100%]',
+    isHovered: false
   },
   {
     id: 5,
     image: BiometasLogo,
+    colorImage: BiomeasLogoColor,
     website: 'https://biometasgroup.com',
-    imageClass: 'max-w-[70%] max-h-[70%]'
+    imageClass: 'max-w-[70%] max-h-[70%]',
+    colorImageClass: 'max-w-[70%] max-h-[70%]',
+    isHovered: false
   },
   {
     id: 6,
     image: VivaLogo,
+    colorImage: VivaColorLogo,
     website: 'https://www.vivabiotech.com/',
-    imageClass: 'max-w-[50%] max-h-[50%]'
+    imageClass: 'max-w-[50%] max-h-[50%]',
+    colorImageClass: 'max-w-[50%] max-h-[50%]',
+    isHovered: false
   }
 ])
 </script>
