@@ -9,10 +9,9 @@
         <div>
           <h4 class="text-sm font-semibold mb-4">Quick Links</h4>
           <ul class="space-y-2 text-sm text-gray-400">
-            <li><a href="#" class="hover:text-white transition-colors duration-300">Portfolio</a></li>
-            <li><a href="#" class="hover:text-white transition-colors duration-300">About Us</a></li>
-            <li><a href="#" class="hover:text-white transition-colors duration-300">Team</a></li>
-            <li><a href="#" class="hover:text-white transition-colors duration-300">Contact</a></li>
+            <li><a href="/portfolio" class="hover:text-white transition-colors duration-300">Portfolio</a></li>
+            <li><a href="/about" class="hover:text-white transition-colors duration-300">About Us</a></li>
+            <li><a href="/contact" class="hover:text-white transition-colors duration-300">Contact</a></li>
           </ul>
         </div>
         <div>

@@ -12,7 +12,7 @@
         <p class="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto">
           HANX Capital partners with visionary entrepreneurs changing market paradigms.
         </p>
-        <a class="border border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-black transition-colors duration-300">
+        <a href="mailto:apply@hanxcapital.com" class="border border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-black transition-colors duration-300">
           Get in touch
         </a>
       </div>
@@ -117,7 +117,7 @@
         <p class="text-xl mb-12 max-w-2xl mx-auto text-white">
           Join forces with HANX and access the capital, network, and expertise you need to reach new heights.
         </p>
-        <a href="#" class="border border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-black-500 transition-colors duration-300">
+        <a href="mailto:apply@hanxcapital.com" class="border border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-black-500 transition-colors duration-300">
           Apply for Funding
         </a>
       </div>

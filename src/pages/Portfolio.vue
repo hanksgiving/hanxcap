@@ -34,7 +34,7 @@
                 :imageClass="company.imageClass"
                 :colorImageClass="company.colorImageClass"
                 :isHovered="company.isHovered"
-                class=" h-full"
+                class="bg-black h-full"
                 @mouseenter="company.isHovered = true"
                 @mouseleave="company.isHovered = false"
               />
@@ -88,8 +88,8 @@ const portfolioCompanies = ref([
     image: MongoDBLogoWhite, 
     colorImage: MongoDBLogo,
     website: 'https://mongodb.com',
-    imageClass: 'w-[80%] h-[50%]',
-    colorImageClass: 'max-w-[80%] max-h-[50%]',
+    imageClass: 'w-[75%] h-[50%]',
+    colorImageClass: 'w-[75%] max-h-[50%]',
     isHovered: false
   },
   {
